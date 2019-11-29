@@ -1934,7 +1934,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #65d4ff;
+  background: #4e1d5b;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3042,4 +3042,15 @@ body {
 }
 .footer {
   background: rgba(96,96,96,0.5) none repeat scroll !important;
+}
+#sidebar {
+  background: url("../../images/hsw.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#sidebar p,
+#sidebar span,
+#sidebar a {
+  color: #fff;
 }
