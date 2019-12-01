@@ -1200,6 +1200,7 @@ pre .javascript .function {
   }
 }
 .menu .menu-item a {
+  color: #00f !important;
   display: block;
   font-size: 13px;
   line-height: inherit;
@@ -1934,7 +1935,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #59a3a6;
+  background: #5785e7;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3042,6 +3043,9 @@ body {
 }
 .footer {
   background: rgba(96,96,96,0.5) none repeat scroll !important;
+}
+.footer-inner {
+  color: #00f;
 }
 #sidebar {
   background: url("../../images/hsw.jpg");
