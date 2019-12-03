@@ -82,12 +82,12 @@
 <meta name="description" content="一级目录二级目录三级目录 1列 a b  2列  a b c  3 列      区块   斜 加粗 12345&amp;lt;html&amp;gt;	&amp;lt;head&amp;gt;  	&amp;lt;title&amp;gt;标题&amp;lt;&#x2F;title&amp;gt;	&amp;lt;&#x2F;head&amp;gt;&amp;lt;&#x2F;html&amp;gt;">
 <meta name="keywords" content="Hexo,Markdown">
 <meta property="og:type" content="article">
-<meta property="og:title" content="新建文章">
+<meta property="og:title" content="hexo新建文章">
 <meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;01&#x2F;myindex&#x2F;index.html">
 <meta property="og:site_name" content="AI4869的博客">
 <meta property="og:description" content="一级目录二级目录三级目录 1列 a b  2列  a b c  3 列      区块   斜 加粗 12345&amp;lt;html&amp;gt;	&amp;lt;head&amp;gt;  	&amp;lt;title&amp;gt;标题&amp;lt;&#x2F;title&amp;gt;	&amp;lt;&#x2F;head&amp;gt;&amp;lt;&#x2F;html&amp;gt;">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-12-02T07:21:21.490Z">
+<meta property="og:updated_time" content="2019-12-02T10:37:25.888Z">
 <meta name="twitter:card" content="summary">
 
 
@@ -124,7 +124,7 @@
 
 
 
-  <title>新建文章 | AI4869的博客</title>
+  <title>hexo新建文章 | AI4869的博客</title>
   
 
 
@@ -159,7 +159,7 @@
       </a>
     </div>
       
-        <p class="site-subtitle"></p>
+        <p class="site-subtitle">铁皮常长老KID</p>
       
   </div>
 
@@ -278,7 +278,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">新建文章</h1>
+          <h1 class="post-title" itemprop="name headline">hexo新建文章</h1>
         
 
         <div class="post-meta">
@@ -507,8 +507,22 @@
              </a>
             
               <p class="site-author-name" itemprop="name">AI4869</p>
-              <p class="site-description motion-element" itemprop="description"></p>
+              <p class="site-description motion-element" itemprop="description">一个five的博客</p>
           </div>
+
+           <!--my custom code begin-->
+           <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+           <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.min.js"></script>
+           <script type="text/javascript">
+              $("#sidebar").hover(function(){
+                $("#mydivshow").velocity('stop').velocity({opacity: 1});
+              },function(){
+                $("#mydivshow").velocity('stop').velocity({opacity: 0});
+              });
+           </script>
+           
+           <div id="mydivshow" class="mydivshow">
+           <!--my custom code end-->     
 
           <nav class="site-state motion-element">
 
@@ -570,6 +584,10 @@
           
 
         </div>
+
+      <!--my custom code begin-->
+      </div>
+      <!--my custom code end-->
       </section>
 
       
@@ -621,6 +639,11 @@
 
 
   <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4</div>
+
+
+
+
+
 
 
 

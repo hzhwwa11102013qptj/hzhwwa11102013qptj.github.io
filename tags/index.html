@@ -79,10 +79,12 @@
 
 
 
+<meta name="description" content="一个five的博客">
 <meta property="og:type" content="website">
 <meta property="og:title" content="标签">
 <meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;tags&#x2F;index.html">
 <meta property="og:site_name" content="AI4869的博客">
+<meta property="og:description" content="一个five的博客">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:updated_time" content="2019-12-01T08:34:57.683Z">
 <meta name="twitter:card" content="summary">
@@ -156,7 +158,7 @@
       </a>
     </div>
       
-        <p class="site-subtitle"></p>
+        <p class="site-subtitle">铁皮常长老KID</p>
       
   </div>
 
@@ -324,8 +326,22 @@
              </a>
             
               <p class="site-author-name" itemprop="name">AI4869</p>
-              <p class="site-description motion-element" itemprop="description"></p>
+              <p class="site-description motion-element" itemprop="description">一个five的博客</p>
           </div>
+
+           <!--my custom code begin-->
+           <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+           <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.min.js"></script>
+           <script type="text/javascript">
+              $("#sidebar").hover(function(){
+                $("#mydivshow").velocity('stop').velocity({opacity: 1});
+              },function(){
+                $("#mydivshow").velocity('stop').velocity({opacity: 0});
+              });
+           </script>
+           
+           <div id="mydivshow" class="mydivshow">
+           <!--my custom code end-->     
 
           <nav class="site-state motion-element">
 
@@ -387,6 +403,10 @@
           
 
         </div>
+
+      <!--my custom code begin-->
+      </div>
+      <!--my custom code end-->
       </section>
 
       
@@ -422,6 +442,11 @@
 
 
   <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4</div>
+
+
+
+
+
 
 
 
