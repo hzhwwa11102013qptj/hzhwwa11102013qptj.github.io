@@ -1,5 +1,19 @@
 /* global NexT: true */
 
+window.onload=function(){
+  var bwol=document.body.offsetWidth;
+  if(bwol < 975){
+      $('aside#sidebar').css("display","none");
+      $('body').css("paddingLeft","0px");
+  }
+}
+window.onresize = function(){
+  var bwos=document.body.offsetWidth;
+  bwos < 975 && $('body').velocity('stop').velocity({paddingLeft: 0},0);
+  if($('aside#sidebar').css('display') != 'none' && $('aside#sidebar').css('width')!='0px')
+      $('body').velocity('stop').velocity({paddingLeft: 350},0);
+}
+
 $(document).ready(function () {
   NexT.motion = {};
 
@@ -54,7 +68,8 @@ $(document).ready(function () {
   var sidebarToggleLine1st = new SidebarToggleLine({
     el: '.sidebar-toggle-line-first',
     status: {
-      arrow: {width: '50%', rotateZ: '-45deg', top: '2px'},
+      //arrow: {width: '50%', rotateZ: '-45deg', top: '2px'},
+      arrow: {width: '50%', rotateZ: '45deg', top: '2px', left: '6px'},
       //close: {width: '100%', rotateZ: '-45deg', top: '5px'}//X 形
       close: {width: '50%', rotateZ: '-45deg', top: '2px',left:'0px'}//箭头形
     }
@@ -70,7 +85,8 @@ $(document).ready(function () {
   var sidebarToggleLine3rd = new SidebarToggleLine({
     el: '.sidebar-toggle-line-last',
     status: {
-      arrow: {width: '50%', rotateZ: '45deg', top: '-2px'},
+      //arrow: {width: '50%', rotateZ: '45deg', top: '-2px'},
+      arrow: {width: '50%', rotateZ: '-45deg', top: '-2px', left: '6px'},
       //close: {width: '100%', rotateZ: '45deg', top: '-5px'}//X 形
       close: {width: '50%', rotateZ: '45deg', top: '-2px',left:'0px'}//箭头形
     }
